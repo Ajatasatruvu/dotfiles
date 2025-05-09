@@ -13,6 +13,9 @@
         "eDP-1, 1920x1080, 1920x0, 1"
         "HDMI-A-1, 1920x1080, 0x0, 1"
       ];
+      exec-once = [
+        "hypridle"
+      ];
       general = {
         gaps_in = 0;
         gaps_out = 0;
