@@ -8,6 +8,7 @@
       nixpkgs-fmt
     ];
     settings = {
+      theme = "flexoki_dark";
       editor = {
         line-number = "relative";
         true-color = true;
