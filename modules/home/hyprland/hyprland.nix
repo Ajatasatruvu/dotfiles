@@ -17,33 +17,14 @@
         gaps_in = 0;
         gaps_out = 0;
         resize_on_border = true;
-        layout = "dwindle";
       };
       decoration = {
         rounding = 10;
-        active_opacity = 1.0;
         inactive_opacity = 0.8;
-        drop_shadow = true;
-        shadow_range = 4;
-        shadow_render_power = 3;
-        blur = {
-          enabled = true;
-          size = 3;
-          passes = 1;
-          vibrancy = 0.1696;
-        };
       };
       dwindle = {
         pseudotile = true;
         preserve_split = true;
-      };
-      input = {
-        kb_layout = "us";
-        follow_mouse = 1;
-        sensitivity = 0;
-        touchpad = {
-          tap-and-drag = true;
-        };
       };
       cursor = {
         inactive_timeout = 10;
