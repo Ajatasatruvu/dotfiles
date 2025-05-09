@@ -13,7 +13,12 @@
       home = {
         username = username;
         homeDirectory = "/home/${username}";
+        preferXdgDirectories = true;
         stateVersion = stateVersion;
+      };
+      xdg = {
+        userDirs = true;
+        createDirectories = true;
       };
       programs.home-manager.enable = true;
     };
