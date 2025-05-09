@@ -11,5 +11,6 @@
   time.timeZone = "Asia/Kolkata";
   i18n.defaultLocale = "en_IN";
   console.keyMap = "us";
+  environment.pathsToLink = [ "/share/zsh" ];
   system.stateVersion = stateVersion; 
 }

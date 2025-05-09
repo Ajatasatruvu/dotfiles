@@ -10,11 +10,11 @@
       pics = "$HOME/Pictures";
     };
     autocd = true;
-    autosuggestions.enable = true;
+    autosuggestion.enable = true;
     history = {
       path = "${config.xdg.dataHome}/zsh/zsh_history";
     };
-    initExtra = ''
+    initContent = ''
       # case insensitive tab completion
       zstyle ':completion:*' completer _complete _ignored _approximate
       zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
