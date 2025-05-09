@@ -11,6 +11,7 @@
     };
     autocd = true;
     autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
     history = {
       path = "${config.xdg.dataHome}/zsh/zsh_history";
     };
