@@ -5,6 +5,7 @@
     ./helix.nix
     ./hyprland
     ./stylix.nix
+    ./waybar.nix
     ./wezterm.nix
   ];
 }

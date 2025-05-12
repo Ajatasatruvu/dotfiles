@@ -10,5 +10,6 @@
       pulse.enable = true;
     };
     udisks2.enable = true; # manage disks and mount
+    power-profiles-daemon.enable = true;
   };
 }

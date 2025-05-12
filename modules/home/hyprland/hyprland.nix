@@ -15,6 +15,7 @@
       ];
       exec-once = [
         "hypridle"
+        "waybar"
       ];
       general = {
         gaps_in = 0;

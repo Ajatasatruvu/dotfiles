@@ -4,7 +4,7 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
-    image = ../../wallpapers/a_man_riding_a_horse.jpg;
+    image = ../../wallpapers/a_cartoon_of_a_castle.png;
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Ice";

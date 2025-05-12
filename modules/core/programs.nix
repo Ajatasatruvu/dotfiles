@@ -10,5 +10,6 @@
     git
     kdePackages.okular
     playerctl
+    wl-gammarelay-rs
   ];
 }
