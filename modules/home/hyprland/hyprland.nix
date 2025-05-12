@@ -1,3 +1,4 @@
+{ config, lib, ... }:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -17,10 +18,11 @@
         "hypridle"
         "waybar"
       ];
-      general = {
+      general = with config.lib.stylix.colors; {
         gaps_in = 0;
         gaps_out = 0;
         resize_on_border = true;
+        "col.active_border" = lib.mkForce "rgb(${base0D}) rgb(${base0C}) rgb(${base0B}) rgb(${base0A}) rgb(${base09}) rgb(${base08}) 360deg";
       };
       decoration = {
         rounding = 10;

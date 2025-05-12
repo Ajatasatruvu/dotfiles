@@ -39,6 +39,7 @@
         "hyprland/window" = {
           separate-outputs = true;
           icon = true;
+          max-length = 30;
         };
         "memory" = {
           format = " {}%";
@@ -188,13 +189,15 @@
         color: #${config.lib.stylix.colors.base08};
       }
       #window, #pulseaudio, #cpu, #memory {
-        font-weight: bold;
         margin: 4px 0px;
         margin-left: 7px;
-        padding: 0px 18px;
-        border-radius: 8px 8px 8px 8px;
+        padding: 0px 12px;
+        border-radius: 8px;
         background: linear-gradient(45deg, #${config.lib.stylix.colors.base08}, #${config.lib.stylix.colors.base09}, #${config.lib.stylix.colors.base0A});
         color: #${config.lib.stylix.colors.base00};
+      }
+      #window {
+        font-size: 10px;
       }
       #pulseaudio.muted {
         background: linear-gradient(45deg, #${config.lib.stylix.colors.base0B}, #${config.lib.stylix.colors.base0C}, #${config.lib.stylix.colors.base0D});
@@ -203,8 +206,8 @@
         font-size: 20px;
         margin: 4px 0px;
         margin-right: 7px;
-        border-radius: 8px 8px 8px 8px;
-        padding: 0px 18px;
+        border-radius: 8px;
+        padding: 0px 12px;
         color: #${config.lib.stylix.colors.base00};
         background: linear-gradient(45deg, #${config.lib.stylix.colors.base0B}, #${config.lib.stylix.colors.base0C}, #${config.lib.stylix.colors.base0D});
       }
@@ -215,8 +218,8 @@
         font-weight: bold;
         font-size: 16px;
         color: #${config.lib.stylix.colors.base00};
-        background: linear-gradient(90deg, #${config.lib.stylix.colors.base04}, #${config.lib.stylix.colors.base0F});
-        margin: 0px 4px;
+        background: linear-gradient(90deg, #${config.lib.stylix.colors.base0E}, #${config.lib.stylix.colors.base0F});
+        margin: 0px 0px 4px 0px;
         padding: 0px 5px;
         border-radius: 16px;
       }
