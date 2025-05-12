@@ -9,5 +9,6 @@
       jack.enable = true;
       pulse.enable = true;
     };
+    udisks2.enable = true; # manage disks and mount
   };
 }

@@ -10,6 +10,7 @@
     ./stylix.nix
     ./system.nix
     ./user.nix
+    ./yazi.nix
   ];
 }
   
