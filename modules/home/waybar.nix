@@ -1,3 +1,4 @@
+{ config, ... }:
 {
   programs.waybar = {
     enable = true;
@@ -33,7 +34,7 @@
         "clock" = {
           format = "{:%H:%M}";
           tooltip = true;
-          tooltip-format = "{:%d-%m-%Y}";
+          tooltip-format = "<big>{:%A, %d.%B %Y}</big>\n<tt><small>{calendar}</small></tt>";
         };
         "hyprland/window" = {
           separate-outputs = true;
@@ -145,6 +146,81 @@
         };
       }
     ];
+    style = ''
+      * {
+        font-family: ${config.stylix.fonts.monospace.name};
+        font-size: 18px; 
+        border: none;
+        border-radius: 0;
+        min-height: 0;
+      }
+      window#waybar {
+        background: rgba(0, 0, 0, 0);
+      }
+      #workspaces {
+        color: #${config.lib.stylix.colors.base00};
+        background: #${config.lib.stylix.colors.base01};
+        margin: 4px 4px;
+        padding: 5px 5px;
+        border-radius: 16px;
+      }
+      #workspaces button {
+        font-weight: bold;
+        padding: 0px 5px;
+        margin: 0px 3px;
+        border-radius: 16px;
+        color: #${config.lib.stylix.colors.base00};
+        background: linear-gradient(45deg, #${config.lib.stylix.colors.base08}, #${config.lib.stylix.colors.base0D});
+        opacity: 0.5;
+      }
+      #workspaces button.active {
+        opacity: 1.0;
+      }
+      #workspaces button:hover {
+        opacity: 0.8;
+      }
+      tooltip {
+        background: #${config.lib.stylix.colors.base00};
+        border: 1px solid #${config.lib.stylix.colors.base08};
+        border-radius: 12px;
+      }
+      tooltip label {
+        color: #${config.lib.stylix.colors.base08};
+      }
+      #window, #pulseaudio, #cpu, #memory {
+        font-weight: bold;
+        margin: 4px 0px;
+        margin-left: 7px;
+        padding: 0px 18px;
+        border-radius: 8px 8px 8px 8px;
+        background: linear-gradient(45deg, #${config.lib.stylix.colors.base08}, #${config.lib.stylix.colors.base09}, #${config.lib.stylix.colors.base0A});
+        color: #${config.lib.stylix.colors.base00};
+      }
+      #pulseaudio.muted {
+        background: linear-gradient(45deg, #${config.lib.stylix.colors.base0B}, #${config.lib.stylix.colors.base0C}, #${config.lib.stylix.colors.base0D});
+      }
+      #battery, #tray, #custom-night-light, #bluetooth, #power-profiles-daemon {
+        font-size: 20px;
+        margin: 4px 0px;
+        margin-right: 7px;
+        border-radius: 8px 8px 8px 8px;
+        padding: 0px 18px;
+        color: #${config.lib.stylix.colors.base00};
+        background: linear-gradient(45deg, #${config.lib.stylix.colors.base0B}, #${config.lib.stylix.colors.base0C}, #${config.lib.stylix.colors.base0D});
+      }
+      #battery.charging {
+        background: linear-gradient(45deg, #${config.lib.stylix.colors.base08}, #${config.lib.stylix.colors.base09}, #${config.lib.stylix.colors.base0A});
+      }
+      #clock {
+        font-weight: bold;
+        font-size: 16px;
+        color: #${config.lib.stylix.colors.base00};
+        background: linear-gradient(90deg, #${config.lib.stylix.colors.base04}, #${config.lib.stylix.colors.base0F});
+        margin: 0px 4px;
+        padding: 0px 5px;
+        border-radius: 16px;
+      }
+    '';
   };
 }
 

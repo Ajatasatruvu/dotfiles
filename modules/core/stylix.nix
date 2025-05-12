@@ -12,11 +12,11 @@
     };
     fonts = {
       sansSerif = {
-        package = pkgs.montserrat;
+        package = pkgs.nerd-fonts.jetbrains-mono;
         name = "Montserrat";
       };
       serif = {
-        package = pkgs.montserrat;
+        package = pkgs.nerd-fonts.jetbrains-mono;
         name = "Montserrat";
       };
       monospace = {
