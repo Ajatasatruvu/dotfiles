@@ -4,7 +4,6 @@
     enable = true;
     defaultEditor = true;
     extraPackages = with pkgs; [
-      clang-tools
       marksman
       nil
       nixpkgs-fmt

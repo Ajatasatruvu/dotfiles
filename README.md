@@ -1,3 +1,8 @@
+# TEMPLATES
+- Add dev environment template to templates folder
+- `nix registry add <id or name for templates> <absolute path to templates dir>` to add templates to registry
+- `nix flake init -t <id given above>#<template name given in flake.nix of templates folder` in a directory to copy template to that dir 
+- `nix develop` to make dev shell environment
 # KEYBINDS
 - `=>` indicates followed by
 ## HYPRLAND
@@ -22,5 +27,5 @@
 - `CTRL + SHIFT + ← / → / ↑ / ↓` adjust pane size
 
 # TODO
-- [ ] bar
+- [x] bar
 - [ ] login manager
