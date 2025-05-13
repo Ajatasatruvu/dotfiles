@@ -1,26 +1,28 @@
 { inputs, pkgs, ... }:
 {
   imports = [ inputs.stylix.nixosModules.stylix ];
-  stylix = {
+  stylix = with pkgs; {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-dark.yaml";
+    # schemes at tinted-theming.github.io/tinted-gallery
+    base16Scheme = "${base16-schemes}/share/themes/everforest-dark-hard.yaml";
+    # desktop wallpaper
     image = ../../wallpapers/a_cartoon_of_a_castle.png;
     cursor = {
-      package = pkgs.bibata-cursors;
+      package = bibata-cursors;
       name = "Bibata-Modern-Ice";
       size = 24;
     };
     fonts = {
       sansSerif = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
-        name = "Montserrat";
+        package = nerd-fonts.jetbrains-mono;
+        name = "JetBrains Mono";
       };
       serif = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
-        name = "Montserrat";
+        package = nerd-fonts.jetbrains-mono;
+        name = "JetBrains Mono";
       };
       monospace = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
+        package = nerd-fonts.jetbrains-mono;
         name = "JetBrains Mono";
       };
     };

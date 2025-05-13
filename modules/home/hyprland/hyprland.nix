@@ -22,6 +22,7 @@
         gaps_in = 0;
         gaps_out = 0;
         resize_on_border = true;
+        # override color set by stylix
         "col.active_border" = lib.mkForce "rgb(${base0D}) rgb(${base0C}) rgb(${base0B}) rgb(${base0A}) rgb(${base09}) rgb(${base08}) 360deg";
       };
       decoration = {
@@ -80,7 +81,7 @@
         "$mod SHIFT, up, resizeactive, 0 -50"
         "$mod SHIFT, down, resizeactive, 0 50"
       ];
-
+      # l extension makes bind work even when locked
       bindl = [
         ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
         ", XF86AudioPlay, exec, playerctl play-pause"
@@ -88,7 +89,7 @@
         ", XF86AudioNext, exec, playerctl next"
         ", XF86AudioPrev, exec, playerctl previous"
       ];
-
+      # e extension makes bind repeat action when held
       bindel = [
         ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+"
         ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
