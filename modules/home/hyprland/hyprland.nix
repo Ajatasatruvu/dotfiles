@@ -44,6 +44,7 @@
         "$mod, B, exec, $browser"
         "$mod, Return, exec, $terminal"
         "$mod, O, exec, okular"
+        "$mod, J, exec, joplin-desktop"
         "$mod, L, exec, playerctl pause; loginctl lock-session"
         "ALT, F4, killactive"
         "$mod, M, exit"
