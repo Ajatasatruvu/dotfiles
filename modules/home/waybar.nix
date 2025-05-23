@@ -29,6 +29,7 @@
             "class<.*firefox.*> title<.*youtube.*>" = " ";
             "wezterm" = " ";
             "okular" = " ";
+            "Joplin" = "󱓧 ";
           };
         };
         "clock" = {
