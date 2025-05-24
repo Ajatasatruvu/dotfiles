@@ -9,7 +9,7 @@
     brightnessctl
     eza
     git
-    jmtpfs
+    simple-mtpfs
     kdePackages.okular
     playerctl
     wl-gammarelay-rs
