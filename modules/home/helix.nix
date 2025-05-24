@@ -54,6 +54,13 @@
           };
           auto-format = true;
         }
+        {
+          name = "kotlin";
+          formatter = {
+            command = "ktfmt";
+          };
+          auto-format = true;
+        }
       ];
     };
   };

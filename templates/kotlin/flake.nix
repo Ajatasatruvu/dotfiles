@@ -21,6 +21,7 @@
           packages = with pkgs; [
             kotlin-language-server
             kotlin
+            ktfmt
           ];
           shellHook = ''
             exec zsh
