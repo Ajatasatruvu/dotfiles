@@ -30,6 +30,7 @@
     isNormalUser = true;
     description = gitUsername;
     extraGroups = [
+      "adbusers"
       "networkmanager"
       "wheel"
     ];
