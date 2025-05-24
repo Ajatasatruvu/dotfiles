@@ -1,3 +1,4 @@
+- use `adb push <PcFilePath> <AndroidPath>` or `adb pull <AndroidPath> <Pcpath>` to copy files
 # TEMPLATES
 - Add dev environment template to templates folder
 - `nix registry add <id or name for templates> <absolute path to templates dir>` to add templates to registry
