@@ -30,6 +30,7 @@
             "wezterm" = " ";
             "okular" = " ";
             "Joplin" = "󱓧 ";
+            "class<.*idea.*" = " ";
           };
         };
         "clock" = {

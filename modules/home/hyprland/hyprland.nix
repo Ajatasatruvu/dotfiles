@@ -40,12 +40,17 @@
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
       };
+      windowrulev2 = [
+        "float, class:(clipse)"
+        "size 70% 60%, class:(clipse)"
+      ];
       bind = [
         "$mod, B, exec, $browser"
         "$mod, Return, exec, $terminal"
         "$mod, O, exec, okular"
         "$mod, J, exec, joplin-desktop"
         "$mod, I, exec, idea-community"
+        "$mod, C, exec, $terminal -e --class clipse clipse"
         "$mod, L, exec, playerctl pause; loginctl lock-session"
         "ALT, F4, killactive"
         "$mod, M, exit"
