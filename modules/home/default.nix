@@ -5,6 +5,7 @@
     ./helix.nix
     ./hyprland
     ./joplin.nix
+    ./neovim.nix
     ./packages.nix
     ./services.nix
     ./stylix.nix
