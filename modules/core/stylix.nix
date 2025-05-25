@@ -4,9 +4,9 @@
   stylix = with pkgs; {
     enable = true;
     # schemes at tinted-theming.github.io/tinted-gallery
-    base16Scheme = "${base16-schemes}/share/themes/everforest-dark-hard.yaml";
+    base16Scheme = "${base16-schemes}/share/themes/onedark-dark.yaml";
     # desktop wallpaper
-    image = ../../wallpapers/a_cartoon_of_a_castle.png;
+    image = ../../wallpapers/cthulhu-1920x1080.png;
     cursor = {
       package = bibata-cursors;
       name = "Bibata-Modern-Ice";
