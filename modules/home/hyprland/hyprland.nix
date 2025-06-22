@@ -49,6 +49,7 @@
         "$mod, Return, exec, $terminal"
         "$mod, O, exec, okular"
         "$mod, J, exec, joplin-desktop"
+        "$mod, S, exec, steam"
         "$mod, I, exec, idea-community"
         "$mod, C, exec, $terminal -e --class clipse clipse"
         "$mod, L, exec, playerctl pause; loginctl lock-session"
