@@ -7,7 +7,7 @@
     };
     settings = {
       keymap = {
-        manager = {
+        mgr = {
           prepend_keymap = [
             {
               on = "M";
