@@ -15,7 +15,7 @@
       system = "x86_64-linux";
       host = "nixVictus";
       username = "harsha";
-      stateVersion = "24.11";
+      stateVersion = "25.05";
       gitUsername = "pharshavardhan2";
     in
     {
