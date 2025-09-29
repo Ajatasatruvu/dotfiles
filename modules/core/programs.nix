@@ -5,7 +5,10 @@
     hyprland.enable = true;
     firefox.enable = true;
     adb.enable = true;
-    steam.enable = true;
+    thunar = {
+      enable = true;
+      plugins = with pkgs.xfce; [ thunar-volman ];
+    };
   };
   environment.systemPackages = with pkgs; [
     brightnessctl
