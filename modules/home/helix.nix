@@ -61,6 +61,11 @@
           };
           auto-format = true;
         }
+        {
+          name = "python";
+          language-servers = [ "basedpyright" "ruff" ];
+          auto-format = true;
+        }
       ];
     };
   };

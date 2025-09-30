@@ -19,7 +19,8 @@
         pkgs.mkShell {
           name = "python devEnv";
           packages = with pkgs; [
-            (python3.withPackages (pp: [ ]))
+            basedpyright
+            (python3.withPackages (pp: [ pp.ruff ]))
           ];
           shellHook = ''
             echo `${pkgs.python3}/bin/python --version`
