@@ -11,6 +11,10 @@
         path = ./kotlin;
         description = "kotlin dev environment";
       };
+      pyDev = {
+        path = ./python;
+        description = "python dev enivronment";
+      };
     };
   };
 }
