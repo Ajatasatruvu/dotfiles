@@ -1,6 +1,7 @@
 {
   imports = [
     ./shell
+    ./direnv.nix
     ./git.nix
     ./helix.nix
     ./hyprland

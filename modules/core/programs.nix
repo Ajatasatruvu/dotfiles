@@ -5,6 +5,7 @@
     hyprland.enable = true;
     firefox.enable = true;
     adb.enable = true;
+    nix-ld.enable = true;
   };
   environment.systemPackages = with pkgs; [
     brightnessctl
