@@ -1,4 +1,4 @@
-{ stateVersion, ... }:
+{ stateVersion, pkgs, ... }:
 {
   nix = {
     settings = {
@@ -9,7 +9,15 @@
     };
   };
   time.timeZone = "Asia/Kolkata";
-  i18n.defaultLocale = "en_IN";
+  i18n = {
+    defaultLocale = "en_IN";
+    inputMethod = {
+      type = "ibus";
+      ibus = {
+        engines = with pkgs.ibus-engines; [ m17 ];
+      };
+    };
+  };
   console.keyMap = "us";
   environment.pathsToLink = [ "/share/zsh" ];
   system.stateVersion = stateVersion;
