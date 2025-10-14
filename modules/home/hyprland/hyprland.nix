@@ -33,6 +33,11 @@
         pseudotile = true;
         preserve_split = true;
       };
+      input = {
+        kb_layout = "us,in";
+        kb_variant = ",tel-sarala";
+        kb_options = "grp:win_space_toggle";
+      };
       cursor = {
         inactive_timeout = 10;
       };

@@ -15,6 +15,19 @@
         homeDirectory = "/home/${username}";
         preferXdgDirectories = true;
         stateVersion = stateVersion;
+        keyboard = {
+          layout = "us,in";
+          variant = ",tel-sarala";
+          options = [ "grp:win_space_toggle" ];
+        };
+      };
+      i18n.inputMethod = {
+        enable = true;
+        type = "fcitx5";
+        fcitx5 = {
+          waylandFrontend = true;
+          addons = with pkgs; [ fcitx5-m17n ];
+        };
       };
       xdg = {
         enable = true;
