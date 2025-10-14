@@ -36,7 +36,7 @@
       input = {
         kb_layout = "us,in";
         kb_variant = ",tel-sarala";
-        kb_options = "grp:win_space_toggle";
+        kb_options = "nbsp:zwnj3zwj4,grp:alt_shift_toggle";
       };
       cursor = {
         inactive_timeout = 10;

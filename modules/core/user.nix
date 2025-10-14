@@ -18,7 +18,7 @@
         keyboard = {
           layout = "us,in";
           variant = ",tel-sarala";
-          options = [ "grp:win_space_toggle" ];
+          options = [ "grp:alt_shift_toggle" "nbsp:zwnj3zwj4" ];
         };
       };
       i18n.inputMethod = {
