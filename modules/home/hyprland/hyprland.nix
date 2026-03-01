@@ -45,9 +45,9 @@
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
       };
-      windowrulev2 = [
-        "float, class:(clipse)"
-        "size 70% 60%, class:(clipse)"
+      windowrule = [
+        "match:class clipse, float on"
+        "match:class clipse, size 70% 60%"
       ];
       bind = [
         "$mod, B, exec, $browser"

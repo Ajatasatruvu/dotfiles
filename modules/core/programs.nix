@@ -4,7 +4,6 @@
   programs = {
     hyprland.enable = true;
     firefox.enable = true;
-    adb.enable = true;
     nix-ld.enable = true;
   };
   environment.systemPackages = with pkgs; [
@@ -14,5 +13,6 @@
     kdePackages.okular
     playerctl
     wl-gammarelay-rs
+    android-tools
   ];
 }
