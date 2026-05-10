@@ -14,6 +14,7 @@
     playerctl
     wl-gammarelay-rs
     android-tools
-    libreoffice
+    # libreoffice
+    woeusb-ng
   ];
 }
