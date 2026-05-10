@@ -16,5 +16,6 @@
     android-tools
     # libreoffice
     woeusb-ng
+    ntfs3g
   ];
 }
